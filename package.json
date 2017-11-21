@@ -1,14 +1,10 @@
 {
-  "name": "ng2-smart-table-demo",
+  "name": "ng2-smart-table-x2",
   "description": "Angular Smart Table",
-  "author": "Akveo <contact@akveo.com>",
-  "homepage": "http://akveo.github.io/ng2-smart-table/",
+  "author": "karthik@karthikmuthu.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akveo/ng2-smart-table.git"
-  },
-  "bugs": {
-    "url": "https://github.com/akveo/ng2-smart-table/issues"
+    "url": "https://github.com/kmuthupa/ng2-smart-table.git"
   },
   "license": "MIT",
   "scripts": {
@@ -22,7 +18,6 @@
     "build:prod": "npm run build -- --prod",
     "build:prod:aot": "npm run build:prod -- --aot",
     "build:ci": "npm run build:prod && npm run build:prod:aot && npm run build:release",
-    "build:ghpages": "npm run build:prod:aot -- --base-href \"https://akveo.github.io/ng2-smart-table/\" && ngh",
     "build:release": "gulp build:release",
     "test": "ng test -sr",
     "test:coverage": "npm run clean:coverage && ng test -sr -cc",

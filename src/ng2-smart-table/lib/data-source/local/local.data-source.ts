@@ -221,13 +221,14 @@ export class LocalDataSource extends DataSource {
   }
 
   protected sort(data: Array<any>): Array<any> {
+    let sortedData = data;
     if (this.sortConf) {
       this.sortConf.forEach((fieldConf) => {
-        data = LocalSorter
-          .sort(data, fieldConf['field'], fieldConf['direction'], fieldConf['compare']);
+        sortedData = LocalSorter
+          .sort(sortedData, fieldConf['field'], fieldConf['direction'], fieldConf['compare']);
       });
     }
-    return data;
+    return sortedData;
   }
 
   // TODO: refactor?
